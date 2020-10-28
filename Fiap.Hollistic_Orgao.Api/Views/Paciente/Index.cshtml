@@ -1,0 +1,107 @@
+﻿@model IndexPacienteViewModel
+
+@{
+    ViewData["Title"] = "Pacientes";
+}
+
+<h1>Pacientes</h1>
+
+<mensagem mensagem="@TempData["msg"]"></mensagem>
+
+<!-- Formulário de pesquisa (Define o método get, pois por padrão qndo utilizamos asp-.. o método é POST -->
+<form asp-action="index" method="get" class="form-inline">
+
+    <input name="Doador" class="form-control mr-2" asp-for="Doador" />
+    <label asp-for="Doador" class="form-control mr-2"></label>
+    <input name="Receptor" class="form-control mr-2" asp-for="Receptor" />
+    <label asp-for="Receptor" class="form-control mr-2"></label>
+
+    <input type="submit" value="Pesquisar" class="btn btn-primary" />
+</form>
+<div>
+    Resultados encontrados: <!-- Count == size() lista java-->
+</div>
+<div class="text-right">
+    <a asp-action="cadastrar">Cadastrar</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Data de Nascimento</th>
+        <th>Tipo Sanguineo</th>
+        <th>Peso</th>
+        <th>Altura</th>
+        <th>Gravidade</th>
+        <th>Doador</th>
+        <th>Receptor</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model.Pacientes)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.Cpf</td>
+            <td>@item.DataNascimento.ToShortDateString()</td>
+            <td>@item.TipoSanguineo</td>
+            <td>@item.Peso</td>
+            <td>@item.Altura</td>
+            <td>@item.Gravidade</td>
+            <td>@(item.Doador?"Sim":"Nao")</td>
+            <td>@(item.Receptor?"Sim":"Nao")</td>
+            <td>
+                <!-- link que envia o código do aluno, para abrir a página de formulário-->
+                <a asp-action="editar" class="btn btn-sm btn-outline-primary"
+                   asp-route-id="@item.PacienteId"> <i class="fa fa-pen"></i> </a>
+
+                <!-- Botão que abre o modal -->
+                <button onclick="pacienteId.value = @item.PacienteId" type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-trash"></i>
+                </button>
+
+                <!-- Botão (Link) para a escolha de exame -->
+                <a asp-action="adicionar" class="btn btn-sm btn-outline-info"
+                   asp-route-id="@item.PacienteId">
+                    <i class="fa fa-list"></i> Exames
+                </a>
+                <a asp-action="adicionarOrgao" class="btn btn-sm btn-outline-dark"
+                   asp-route-id="@item.PacienteId">
+                    <i class="fa fa-list"></i> Orgao
+                </a>
+
+            </td>
+        </tr>
+    }
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Deseja realmente excluir o paciente?
+            </div>
+            <div class="modal-footer">
+                <!-- Formulário com campo oculto que envia o código do aluno
+                     Mudar o type=submit do botao que envia os dados
+                    No campo oculto, adicionar o id que será utilizado no onclick do botao que abre o modal-->
+                <form asp-action="remover">
+                    <input type="hidden" name="id" id="pacienteId" />
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button type="submit" class="btn btn-danger">Sim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,65 @@
+﻿@model Fiap.Hollistic.Web.Model.Paciente
+
+<div class="form-group">
+    <label asp-for="Nome"></label>
+    <input asp-for="Nome" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="Cpf"></label>
+    <input asp-for="Cpf" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="DataNascimento"></label>
+    <input asp-for="DataNascimento" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="TipoSanguineo"></label>
+    <input asp-for="TipoSanguineo" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="Peso"></label>
+    <input asp-for="Peso" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="Altura"></label>
+    <input asp-for="Altura" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="Gravidade"></label>
+    <input asp-for="Gravidade" class="form-control" />
+</div>
+<div class="form-group">
+    <input asp-for="Doador" class="form-control" />
+    <label asp-for="Doador"></label>
+
+</div>
+<div class="form-group">
+    <input asp-for="Receptor" class="form-control" />
+    <label asp-for="Receptor"></label>
+</div>
+<div class="form-group">
+    <label asp-for="Endereco.Rua"></label>
+    <input asp-for="Endereco.Rua" class="form-control" />
+
+</div>
+<div class="form-group">
+    <label asp-for="Endereco.Numero"></label>
+    <input asp-for="Endereco.Numero" class="form-control" />
+
+</div>
+<div class="form-group">
+    <label asp-for="Endereco.Estado"></label>
+    <select asp-for="Endereco.Estado" class="form-control" asp-items="@Html.GetEnumSelectList<Fiap.Hollistic.Web.Model.Estado>()">
+        <option>Selecione</option>
+    </select>
+</div>
+<div class="form-group">
+    <label asp-for="Endereco.Cidade"></label>
+    <input asp-for="Endereco.Cidade" class="form-control" />
+
+</div>
+<div class="form-group">
+    <label asp-for="Endereco.Cep"></label>
+    <input asp-for="Endereco.Cep" class="form-control" />
+
+</div>

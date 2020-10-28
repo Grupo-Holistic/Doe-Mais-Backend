@@ -1,0 +1,19 @@
+﻿@model Fiap.Hollistic.Web.Model.Usuario
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<mensagem mensagem="@TempData["msg"]"></mensagem>
+
+<form asp-action="login">
+
+    <label asp-for="Email" ></label>
+    <input asp-for="Email" class="form-control" />
+    <label asp-for="Senha" ></label>
+    <input asp-for="Senha" class="form-control" />
+
+    <input type="submit" value="Entrar" class="btn btn-primary mt-2" />
+
+</form>

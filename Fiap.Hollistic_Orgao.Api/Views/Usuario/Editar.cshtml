@@ -1,0 +1,16 @@
+﻿@model Fiap.Hollistic.Web.Model.Usuario
+
+@{
+    ViewData["Title"] = "Atualização de Usuario";
+}
+
+<h1>Atualização</h1>
+
+<form asp-action="editar">
+    <input asp-for="UsuarioId" />
+
+    <partial name="_Formulario" />
+
+    <input type="submit" value="Editar" class="btn btn-primary" />
+    <a asp-action="index" class="btn btn-danger">Voltar</a>
+</form>

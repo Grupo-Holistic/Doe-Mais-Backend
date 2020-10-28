@@ -1,0 +1,17 @@
+﻿@model Fiap.Hollistic.Web.Model.Hospital
+
+@{
+    ViewData["Title"] = "Cadastro de Hospital";
+}
+
+<h1>Cadastro de Hospital</h1>
+
+<mensagem mensagem="@TempData["msg"]"></mensagem>
+
+<form asp-action="cadastrar">
+
+    <partial name="_Formulario" />
+
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+
+</form>

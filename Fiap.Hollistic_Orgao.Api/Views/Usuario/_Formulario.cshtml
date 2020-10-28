@@ -1,0 +1,25 @@
+﻿@model Fiap.Hollistic.Web.Model.Usuario
+
+<div class="form-group">
+    <label asp-for="Hospital"></label>
+    <select asp-for="HospitalId" class="form-control" asp-items="@ViewBag.hospitais">
+        <option>Selecione</option>
+    </select>
+</div>
+<div class="form-group">
+    <label asp-for="Tipo"></label>
+    <input asp-for="Tipo" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="Email"></label>
+    <input asp-for="Email" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="Login"></label>
+    <input asp-for="Login" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp-for="Senha"></label>
+    <input asp-for="Senha" class="form-control" />
+</div>
+

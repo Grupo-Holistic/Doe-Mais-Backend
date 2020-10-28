@@ -1,0 +1,24 @@
+﻿@model Fiap.Hollistic.Web.Model.Orgao
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Orgãos</h1>
+
+
+<table class="table">
+    <tr>
+        <th>Tipo</th>
+        <th>Condição</th>
+        <th>Isquemia</th>
+    </tr>
+    @foreach (var item in ViewBag.orgaos)
+    {
+        <tr>
+            <td>@item.TipoOrgao</td>
+            <td>@item.Condicao</td>
+            <td>@item.Isquemia</td>
+
+        </tr>
+    }
+</table>
