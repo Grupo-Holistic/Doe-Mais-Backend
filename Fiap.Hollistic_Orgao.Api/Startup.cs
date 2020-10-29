@@ -27,6 +27,14 @@ namespace Fiap.Hollistic_Orgao.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
             services.AddDbContext<DoacaoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("conexao")));
             services.AddScoped<IPacienteRepository, PacienteRepository>();
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
@@ -69,7 +77,7 @@ namespace Fiap.Hollistic_Orgao.Api
 
             app.UseStaticFiles();
             app.UseDefaultFiles();
-
+            app.UseCors("MyPolicy");
         }
     }
 }

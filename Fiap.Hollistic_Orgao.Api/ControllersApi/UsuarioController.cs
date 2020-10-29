@@ -6,11 +6,13 @@ using Fiap.Hollistic.Web.Model;
 using Fiap.Hollistic_Orgao.Api.Models;
 using Fiap.Hollistic_Orgao.Web.Persistencia;
 using Fiap.Hollistic_Orgao.Web.Repositories;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Fiap.Hollistic_Orgao.Api.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsuarioController : ControllerBase
