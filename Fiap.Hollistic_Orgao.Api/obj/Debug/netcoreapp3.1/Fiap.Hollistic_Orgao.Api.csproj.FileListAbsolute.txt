@@ -288,8 +288,6 @@ C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\bin\Deb
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.csprojAssemblyReference.cache
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.AssemblyInfoInputs.cache
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.AssemblyInfo.cs
-C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.csproj.CoreCompileInputs.cache
-C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.RazorAssemblyInfo.cache
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.RazorAssemblyInfo.cs
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.TagHelpers.input.cache
@@ -326,3 +324,5 @@ C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Deb
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.dll
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.pdb
 C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.genruntimeconfig.cache
+C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Desktop\Fiap.Hollistic_Orgao.Api\Fiap.Hollistic_Orgao.Api\obj\Debug\netcoreapp3.1\Fiap.Hollistic_Orgao.Api.MvcApplicationPartsAssemblyInfo.cache

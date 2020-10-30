@@ -28,13 +28,9 @@ namespace Fiap.Hollistic_Orgao.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
-            {
-                builder.AllowAnyOrigin()
-                       .AllowAnyMethod()
-                       .AllowAnyHeader();
-            }));
-
+            services.AddCors();
+           
+            
             services.AddDbContext<DoacaoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("conexao")));
             services.AddScoped<IPacienteRepository, PacienteRepository>();
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
@@ -59,9 +55,14 @@ namespace Fiap.Hollistic_Orgao.Api
                 app.UseExceptionHandler("/Home/Error");
             }
 
+               
+            app.UseCors(o => o.WithOrigins("*").WithMethods("*").WithHeaders("*"));
+
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("MyPolicy");
 
             app.UseEndpoints(endpoints =>
             {
@@ -77,7 +78,6 @@ namespace Fiap.Hollistic_Orgao.Api
 
             app.UseStaticFiles();
             app.UseDefaultFiles();
-            app.UseCors("MyPolicy");
         }
     }
 }

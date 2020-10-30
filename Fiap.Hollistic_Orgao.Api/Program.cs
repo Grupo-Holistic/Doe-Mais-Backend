@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -13,7 +14,8 @@ namespace Fiap.Hollistic_Orgao.Api
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();            
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +24,7 @@ namespace Fiap.Hollistic_Orgao.Api
                 {
                     webBuilder.UseStartup<Startup>();                  
                 });
+
+
     }
 }

@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Fiap.Hollistic_Orgao.Api.Controllers
 {
-    [EnableCors("MyPolicy")]
+    [EnableCors("*")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsuarioController : ControllerBase
