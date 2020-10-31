@@ -8641,25 +8641,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lucas\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\Fiap.Hollistic_Orgao.Api\\Fiap.Hollistic_Orgao.Api\\Fiap.Hollistic_Orgao.Api.csproj",
+      "projectUniqueName": "E:\\Documentos\\FIAP\\2_ano\\2_semestre\\_Challenge\\Backend\\Doe-Mais-Backend\\Fiap.Hollistic_Orgao.Api\\Fiap.Hollistic_Orgao.Api.csproj",
       "projectName": "Fiap.Hollistic_Orgao.Api",
-      "projectPath": "C:\\Users\\Lucas\\Desktop\\Fiap.Hollistic_Orgao.Api\\Fiap.Hollistic_Orgao.Api\\Fiap.Hollistic_Orgao.Api.csproj",
-      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas\\Desktop\\Fiap.Hollistic_Orgao.Api\\Fiap.Hollistic_Orgao.Api\\obj\\",
+      "projectPath": "E:\\Documentos\\FIAP\\2_ano\\2_semestre\\_Challenge\\Backend\\Doe-Mais-Backend\\Fiap.Hollistic_Orgao.Api\\Fiap.Hollistic_Orgao.Api.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "E:\\Documentos\\FIAP\\2_ano\\2_semestre\\_Challenge\\Backend\\Doe-Mais-Backend\\Fiap.Hollistic_Orgao.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8723,7 +8718,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
