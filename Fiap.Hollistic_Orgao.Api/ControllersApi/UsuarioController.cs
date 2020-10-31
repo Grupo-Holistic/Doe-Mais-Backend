@@ -63,7 +63,7 @@ namespace Fiap.Hollistic_Orgao.Api.Controllers
         }
 
         //localhost:1233/api/produto (POST) -> cadastrar um produto
-        [HttpPost]
+        [HttpPost("cadastrar")]
         public ActionResult<Usuario> Post(Usuario usuario)
         {
             _usuarioRepository.Cadastrar(usuario);
